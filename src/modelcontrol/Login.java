@@ -5,7 +5,7 @@ import java.sql.SQLException;
 public class Login implements LoginControl{
 	
 	UserModelControl signInControl = new UserModelControl();
-	String loginedId;
+	public static String loginedId;
 	
 	//로그인 기능
 	@Override
