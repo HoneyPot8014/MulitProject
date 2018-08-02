@@ -8,7 +8,7 @@ public interface LoginControl {
 	//1. db에서 ID를 키값으로, 조회 한 후,
 	//2. 입력창의 ID, PW가 일치한다면, 로그인,
 	//3. 아닐 시, 에러 창 띄워줘야 함.
-	public void singIn(String id, String password);
+	public int singIn(String id, String password);
 	
 	//회원 가입 클릭시, 새로운 창을 띄우는 로직 구현 해야함
 	//1. GUI새로운 창 띄워 야 함( View에서 SingUp 클래스 이용)

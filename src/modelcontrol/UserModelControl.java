@@ -49,9 +49,9 @@ public class UserModelControl {
 	}
 	
 	public void insert(String id, String name, String password, String school, String major, String snum) throws SQLException {
-		preparedStatement = connection.prepareStatement("INSERT INTO MEMBERSHIP VALUES(?, ?, ?, ?)");
-		preparedStatement.setString(1, id);
-		preparedStatement.setString(2, name);
+		preparedStatement = connection.prepareStatement("INSERT INTO MEMBERSHIP VALUES(?, ?, ?, ?, ?, ?)");
+		preparedStatement.setString(1, name);
+		preparedStatement.setString(2, id);
 		preparedStatement.setString(3, password);
 		preparedStatement.setString(4, school);
 		preparedStatement.setString(5, major);
